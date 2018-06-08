@@ -1,0 +1,197 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  border-radius: 5px;
+  font-family: 'Kavivanar', cursive;
+  color: white;
+  padding: 5px;
+  height: 150vh;
+  background-image: url(../images/hiking.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+header {
+  grid-column: 1/9;
+  grid-row: 1/4; }
+
+.topnav {
+  background-color: #7EA2AA;
+  overflow: hidden;
+  padding: 9px 9px;
+  font-family: 'Kavivanar', cursive;
+  background-image: url(../images/fire.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 84px;
+  font-size: 17px; }
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #7EA2AA;
+  color: white; }
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none; }
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden; }
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 1px 122px;
+  background-color: inherit;
+  margin: 0;
+  font-family: 'Kavivanar', cursive; }
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-family: 'Kavivanar', cursive; }
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: 'Kavivanar', cursive; }
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white; }
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black; }
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea {
+  width: 70%;
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 23px;
+  box-sizing: border-box;
+  resize: vertical; }
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 15px 13px 29px 0;
+  display: inline-block; }
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right; }
+
+/* Style the container */
+.topnav {
+  grid-column: 1/5;
+  grid-row: 1/2; }
+
+form {
+  grid-column: 1/5;
+  grid-row: 2/8; }
+
+h5 {
+  grid-column: 1/5;
+  grid-row: 9/10; }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-20, .col-70, input[type=submit] {
+    width: 26%;
+    margin-top: 0;
+    font-size: 10px; }
+
+  p {
+    font-size: 9px;
+    grid-column: 1/5;
+    grid-row: 2/3; }
+
+  .topnav {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 4px; }
+    .topnav a {
+      font-size: 20px; }
+
+  form {
+    grid-column: 1/5;
+    grid-row: 4/8; }
+
+  .item1 {
+    grid-column: 1/5;
+    display: block; }
+
+  .dropdown {
+    color: black;
+    font-size: 20px; }
+
+  .dropdown .dropbtn {
+    font-size: 20px; }
+
+  label {
+    font-size: 9px; }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 5px; }
+
+  h5 {
+    font-size: 9px; } }
+@media screen and (max-width: 768px) {
+  .dropdown .dropbtn {
+    padding: 1px 5px; }
+
+  .topnav a {
+    padding: 14px 48px; }
+
+  .item1 {
+    grid-column: 1/5;
+    grid-row: 1/2; }
+
+  p {
+    grid-column: 1/5;
+    grid-row: 4/5; }
+
+  .col-25 {
+    grid-column: 1/5;
+    grid-row: 6/10; }
+
+  .dropdown.dropbtn {
+    padding: 1px 3px; } }
+
+/*# sourceMappingURL=contact.css.map */

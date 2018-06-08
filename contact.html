@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/contact.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- This is where my topnav starts  -->
+      <header>
+        <div class="topnav">
+          <div class="dropdown">
+              <button class="dropbtn"><a href="index.html">Home</a>
+                  <i class="fa fa-caret-down"></i>
+              </button>
+                  <div class="dropdown-content">
+                  <a href="index.html#one">Camping</a>
+                  <a href="index.html#two">Hiking</a>
+                  <a href="index.html#three">Fishing</a>
+                  <a href="index.html#four">Rock Climbing</a>
+                  </div>
+          </div>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact us</a>
+
+        </div>
+      </header>
+      <!-- this is where my Topnav ends  -->
+
+          <form action="action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country">
+                  <option value="Camping">Camping</option>
+                  <option value="hiking">Hiking</option>
+                  <option value="fishing">Fishing</option>
+                  <option value="rockclimbing">Rock Climbing</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Message</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+          <h5>Nature is cheaper than therapy | Outdoor Adventures</h5>
+        </div>
+
+
+  </body>
+</html>
